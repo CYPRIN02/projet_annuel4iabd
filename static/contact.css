@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #d9534f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.logo {
+  width: 100px; /* remplacez la valeur par celle que vous souhaitez */
+  height: 100px; /* remplacez la valeur par celle que vous souhaitez */
+  border-radius: 50%;
+  object-fit: cover;
+}
