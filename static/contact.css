@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+
+    /* Ajoutez l'image que vous souhaitez utiliser en tant que background */
+    background-image: url("/static/page_background.jpg");
+    /* Répétez l'image sur tout l'arrière-plan */
+    background-repeat: repeat;
+    /* Ajustez l'alignement de l'image */
+    background-position: center;
+    /* Fixez l'image de fond pour qu'elle ne se déplace pas avec le contenu de la page */
+    background-attachment: fixed;
+
+}
+
+.header {
+    background-color: #3976a8;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.logo {
+  width: 100px; /* remplacez la valeur par celle que vous souhaitez */
+  height: 100px; /* remplacez la valeur par celle que vous souhaitez */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  background-color: #d9534f;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #641613;
+}
+
+.btn-submit {
+  float: right;
+}

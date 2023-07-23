@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résultats d'analyse d'émotions</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='smile-logo-results.jpg') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='results.css') }}">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <a class="navbar-brand" href="/">
+        <img src="/static/logoEmotion.png" alt="Emotion Logo" class="logo">
+      </a>
+      <h1>Résultats d'analyse d'émotions</h1>
+    </div>    
+  </header>
+  
+  <div>
+    <h2>Voici les résultats de l'analyse d'émotions :</h2>
+  </div>
+
+  <div class="image-grid">
+    <div class="image-item">
+      <a href="{{ results_pie_emotion }}" target="_blank">
+        <img src="{{ results_pie_emotion }}" alt="Emotion Pie description">
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="{{ results_evolution_emotion_1 }}" target="_blank">
+        <img src="{{ results_evolution_emotion_1 }}" alt="Emotion Evolution description">
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="{{ results_evolution_emotion_2 }}" target="_blank">
+        <img src="{{ results_evolution_emotion_2 }}" alt="Emotion Evolution description">
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="{{ results_evolution_emotion_3 }}" target="_blank">
+        <img src="{{ results_evolution_emotion_3 }}" alt="Emotion Evolution description">
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="{{ results_evolution_emotion_4 }}" target="_blank">
+        <img src="{{ results_evolution_emotion_4 }}" alt="Emotion Evolution description">
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="{{ results_evolution_emotion_5 }}" target="_blank">
+        <img src="{{ results_evolution_emotion_5 }}" alt="Emotion Evolution description">
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="{{ results_evolution_emotion_6 }}" target="_blank">
+        <img src="{{ results_evolution_emotion_6 }}" alt="Emotion Evolution description">
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="{{ results_evolution_emotion_7 }}" target="_blank">
+        <img src="{{ results_evolution_emotion_7 }}" alt="Emotion Evolution description">
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>Nous vous remercions d'avoir utilisé notre service d'analyse d'émotions dans les vidéos.</p>
+      <p>N'hésitez pas à nous contacter pour plus d'informations.</p>
+    </div>
+  </footer>
+</body>
+</html>

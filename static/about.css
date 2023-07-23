@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    /* Ajoutez l'image que vous souhaitez utiliser en tant que background */
+    background-image: url("/static/fond-page-accueil.jpg");
+    /* Répétez l'image sur tout l'arrière-plan */
+    background-repeat: repeat;
+    /* Ajustez l'alignement de l'image */
+    background-position: center;
+    /* Fixez l'image de fond pour qu'elle ne se déplace pas avec le contenu de la page */
+    background-attachment: f;
+  }
+  
+  .header {
+    background-color: #4ba0af;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .description {
+    margin-bottom: 30px;
+  }
+  
+  .team {
+    margin-top: 30px;
+  }
+  
+  .team h2 {
+    text-align: center;
+  }
+  
+  .team ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .team li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+  }
+  
+  .image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    margin-top: 30px;
+  }
+  
+  /* Le reste du CSS reste inchangé, ajoutez simplement ce nouveau style */
+
+.border-box {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    margin-bottom: 30px;
+  }
+  
+  .border-box p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Vous pouvez personnaliser davantage le style selon vos préférences */
+  
+  /* Le reste du CSS reste inchangé, ajoutez simplement ce nouveau style */
+
+.attractive-paragraph {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+  }
+  
+  /* Vous pouvez personnaliser davantage le style selon vos préférences */
+  

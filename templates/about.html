@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>À propos</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='smile-logo-curieux.png') }}">
+</head>
+<body>
+  <div class="header">
+    <a class="navbar-brand" href="/">
+      <img src="/static/logoEmotion.png" alt="Emotion Logo" class="logo">
+    </a>
+    <h1>À propos</h1>
+  </div>
+
+  <div class="content">
+    <div class="description">
+      <h2>À propos de notre projet : </h2>
+      <p>Nous sommes des étudiants de l'ESGI en 4ème année d'Intelligence Artificielle et Big Data. Notre projet consiste à créer un site web permettant aux utilisateurs de télécharger une vidéo et d'analyser les émotions détectées dans cette vidéo. L'analyse est réalisée à l'aide de techniques d'intelligence artificielle et de traitement d'image.</p>
+      <p>Nous sommes passionnés par l'IA et nous avons développé ce projet pour explorer les possibilités de la détection d'émotions dans les vidéos. Notre objectif est de fournir aux utilisateurs une expérience unique et interactive en leur permettant de voir comment différentes émotions sont détectées dans leur vidéo.</p>
+      <div>
+        <a href="https://www.esgi.fr/actualites-ecole-informatique.html" target="_blank">
+            <img src="{{ url_for('static', filename='ESGI-LOGO.jpg') }}" alt="ESGI" class="image">
+        </a>
+      </div>
+    </div>
+
+    <div class="team">
+      <h2>Notre équipe</h2>
+      <ul>
+        <li>RASOLOARIVONY Princy - IABD</li>
+        <li>RASAMY Krishna - IABD</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
