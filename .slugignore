@@ -1,17 +1,17 @@
-.idea/
-.git/
-*.pyc
-*.pyo
-*.pyd
-__pycache__
+# .idea/
+# .git/
+# *.pyc
+# *.pyo
+# *.pyd
+# __pycache__
 
-.dist/
-*.log
-*.tmp
-*.csv
-.vscode/
-env
-.ebextensions/
+# .dist/
+# *.log
+# *.tmp
+# *.csv
+# .vscode/
+# env
+# .ebextensions/
 # csv_file/
 # haarcascades/
 # model/
