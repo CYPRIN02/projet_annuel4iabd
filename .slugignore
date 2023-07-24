@@ -1,0 +1,10 @@
+.idea/
+.git/
+.dist/
+*.log
+*.tmp
+*.csv
+csv_file/
+haarcascades/
+model/
+static/plt_result/
