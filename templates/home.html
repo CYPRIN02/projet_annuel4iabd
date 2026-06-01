@@ -44,7 +44,7 @@
             </ul>
         </div>
         <div>
-            <h1 class="text-center">Analyse des émotions dans une vidéo</h1>
+            <h1 class="text-right" style="color: white; font-size: 48px; font-weight: bold; margin-top: 20px;">Analyse des émotions dans une vidéo</h1>
         </div>
     </nav>
 </header>
@@ -56,7 +56,8 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <h2>Bienvenue sur notre site d'analyse des émotions</h2>
-                    <p>Nous utilisons des algorithmes avancés pour analyser les émotions dans les vidéos et fournir des informations précieuses pour améliorer votre contenu.</p>
+                    <p>
+                        Bienvenue sur notre plateforme unique qui offre une nouvelle dimension à l'analyse des émotions dans les vidéos. À l'aide d'un algorithme d'intelligence artificielle avancé, notre site identifie et mesure les émotions exprimées par les visages à travers vos vidéos. </p>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ url_for('static', filename='emoticons-differents.jpg') }}" alt="Présentation" class="img-fluid">
@@ -65,36 +66,13 @@
         </div>
     </section>
 
-    <section class="fonctionnalites">
-        <div class="container">
-            <h2>Notre site offre les fonctionnalités suivantes :</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="{{ url_for('static', filename='analyse.jpg') }}" alt="Analyse d'émotions" class="img-fluid">
-                    <h3>Analyse d'émotions</h3>
-                    <p>Nous utilisons des algorithmes sophistiqués pour analyser les émotions dans les vidéos et fournir des informations précieuses pour améliorer votre contenu.</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="{{ url_for('static', filename='comparaison.jpg') }}" alt="Comparaison d'émotions" class="img-fluid">
-                    <h3>Comparaison d'émotions</h3>
-                    <p>Nous comparons les émotions dans différentes parties d'une vidéo pour fournir des insights sur les moments clés où les émotions des téléspectateurs sont les plus affectées.</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="{{ url_for('static', filename='rapport.jpg') }}" alt="Rapport d'analyse" class="img-fluid">
-                    <h3>Rapport d'analyse</h3>
-                    <p>Nous fournissons un rapport détaillé sur les émotions dans votre vidéo, avec des graphiques et des visualisations pour aider à comprendre les résultats.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="upload">
         <div class="container mt-4 d-flex justify-content-center align-items-center">
             <div class="col-md-6">
-                <h1 class="text-center">Vous pouvez mettre votre vidéo maintenant pour voir le résultat</h1>
+                <h1 class="text-center">Veuillez charger une vidéo</h1>
                 <form class="mt-4" action="{{ url_for('analyze') }}" method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="fileInput">Télécharger une vidéo :</label>
+                        <label for="fileInput">Sélectioner la vidéo :</label>
                         <input type="file" class="form-control-file" id="fileInput" name="video" accept="video/*">
                     </div>
                     <button type="submit" class="btn btn-primary">Analyser la vidéo</button>
@@ -102,6 +80,26 @@
             </div>
         </div>
     </section>
+
+    <section class="fonctionnalites">
+        <div class="container">
+            <h2>Notre site offre les fonctionnalités suivantes :</h2>
+            <div class="row">
+                <div class="col">
+                    <h3>Analyse d'émotions</h3>
+                    <p>Nous utilisons des algorithmes sophistiqués pour analyser les émotions dans les vidéos et fournir des informations précieuses pour améliorer votre contenu.</p>
+                    <img src="{{ url_for('static', filename='analyse.png') }}" alt="Analyse d'émotions" class="img-fluid">
+                </div>
+                <div class="col">
+                    <h3>Rapport d'analyse</h3>
+                    <p>Nous fournissons un rapport détaillé sur les émotions dans votre vidéo, avec des graphiques et des visualisations pour aider à comprendre les résultats.</p>
+                    <img src="{{ url_for('static', filename='rapport.png') }}" alt="Rapport d'analyse" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
 
 </body>
 
@@ -120,12 +118,6 @@
                     <li><a href="/about">À propos</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Contact</h5>
-                <p>123 Rue Principale, Montréal, QC, Canada</p>
-                <p>Téléphone : 514-555-1234</p>
-                <p>Email : info@monentreprise.com</p>
             </div>
         </div>
     </div>
