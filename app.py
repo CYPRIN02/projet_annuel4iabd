@@ -41,8 +41,14 @@ def analyze():
     if not video or video.filename == "":
         return render_template("home.html", error="Veuillez télécharger une vidéo.")
 
-    os.makedirs("uploads", exist_ok=True)
-    video_path = os.path.join("uploads", video.filename)
+    """os.makedirs("uploads", exist_ok=True)
+    video_path = os.path.join("uploads", video.filename)"""
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+    UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+    video_path = os.path.join(UPLOAD_FOLDER, video.filename)
 
     video.save(video_path)
 
@@ -57,14 +63,27 @@ def analyze():
         6: "Surprised",
     }
 
-    # Load json and create model
+    """# Load json and create model
     json_file = open("model/emotion_model.json", "r", encoding="utf-8")
     loaded_model_json = json_file.read()
     json_file.close()
     emotion_model = model_from_json(loaded_model_json)
 
     # Load weights into new model
-    emotion_model.load_weights("model/emotion_model.h5")
+    emotion_model.load_weights("model/emotion_model.h5")"""
+
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+    MODEL_JSON_PATH = os.path.join(BASE_DIR, "model", "emotion_model.json")
+    MODEL_H5_PATH = os.path.join(BASE_DIR, "model", "emotion_model.h5")
+
+    json_file = open(MODEL_JSON_PATH, "r", encoding="utf-8")
+    loaded_model_json = json_file.read()
+    json_file.close()
+
+    emotion_model = model_from_json(loaded_model_json)
+    emotion_model.load_weights(MODEL_H5_PATH)
+    
     print("Loaded model from disk")
 
     # To use webcam to test the model
@@ -281,4 +300,4 @@ def contact():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=False)
